@@ -45,8 +45,8 @@ module.exports = {
 
 ```javascript
     {
-        "username": "nome_do_usuario",
-        "password": "senha_do_usuario"
+        "USERNAME": "nome_do_usuario",
+        "PASSWORD": "senha_do_usuario"
     }
 ```
 
@@ -73,7 +73,7 @@ Cypress.Commands.add("login", (username, password) => {
 ```javascript
 describe("Fazer o Login", () => {
   beforeEach(() => {
-    cy.login(Cypress.env("username"), Cypress.env("password"));
+    cy.login(Cypress.env("USERNAME"), Cypress.env("PASSWORD"));
   });
 
   it("Deve exibir a página de inventário após o login", () => {
